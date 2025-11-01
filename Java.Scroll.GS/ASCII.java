@@ -4,11 +4,14 @@ public class ASCII {
     static int x = 40;
     static int y = 39;
     static final Random rand = new Random();
+    //static int i = 0;
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws InterruptedException {
 
         char[][] nextRows = new char[x][y];
         char[][] func = xmastree();
+       
 
         for (int a = 0; a < 7; a++) {
             for (int b = 0; b < 30; b++) {
@@ -17,41 +20,58 @@ public class ASCII {
             System.out.println();
         }
 
-        // for (int i = 0; i < nextRows.length; i++) {
-        //     // nextRows[i] = emptyRow();
+        for (int i = 0; i < nextRows.length; i++) {
+            // nextRows[i] = emptyRow();
 
-        //     char[][] variable = penguin();
-        //     for (int x = 0; x < 40; x++) {
-        //         for (int y = 0; y < 39; y++) {
-        //             System.out.print(variable[x][y]);
-        //         }
-        //         System.out.println();
-        //     }
-        // }
+            char[][] variable = penguin();
+            for (int x = 0; x < 40; x++) {
+                for (int y = 0; y < 39; y++) {
+                    System.out.print(variable[x][y]);
+                }
+                System.out.println();
+                Thread.sleep(30);
+            }
+        }
+        char[][] getCloud = Cloud.getCloud();
+        for (int a = 0; a < x; a++) {
+            for (int b = 0; b < y; b++) {
+                System.out.print(getCloud[a][b]);
+            }
+            System.out.println();
+        }
 
-    //     while (true) {
-    //         for (int x = 0; x < x - y; x++) {
+        while (true) {
+            for (int x = 0; x < y; x++) {
 
-    //             if (rand.nextDouble() < 0.01) {
-    //                 char[][] img;
-    //                 if (rand.nextDouble() < 0.5)
-    //                     img = penguin();
-    //                 else {
-    //                     img = xmastree();
-    //                 }
-    //                 for (int iy = 0; iy < y; iy++) {
-    //                     for (int ix = 0; ix < x; ix++) {
-    //                         nextRows[iy][x + ix] = img[iy][ix];
+                if (rand.nextDouble() < 0.7) {
+                    char[][] img;
+                    if (rand.nextDouble() < 0.7) {
+                        img = penguin();
+        
+                    } else {
+                        img = xmastree();
+                        img = Cat.getBunny();
+                        img = Cloud.getCloud();
+                     }
+                    } 
+                    }
+                    for (int iy = 0; iy < y; iy++) {
+                        for (int ix = 0; ix < x; ix++) {
+                            nextRows[iy][x + ix] = img[iy][ix];
 
-    //                     }
+                        }
 
-    //                 }
+                    }
 
-    //             }
-    //         }
-    //     }
-     }
+                }
+            }
 
+  //  }
+
+    //
+    
+
+    // }
     static char[][] penguin() {
         char[][] img = new char[40][39];
         for (int x = 0; x < 40; x++) {
