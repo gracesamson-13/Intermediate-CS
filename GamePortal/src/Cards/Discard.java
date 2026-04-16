@@ -1,8 +1,7 @@
-import Game.Game;
 import processing.core.PApplet;
 import processing.core.PImage; 
 
-public class Discard implements Game {
+public class Discard {
 
 float a = 400;   
 float b = 250;   

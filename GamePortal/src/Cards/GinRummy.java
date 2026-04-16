@@ -1,7 +1,6 @@
-import Game.Game;
 import processing.core.PApplet;
 
-public class GinRummy extends CardGame implements Game {
+public class GinRummy extends CardGame {
   
    
     ClickableRectangle discardButton;

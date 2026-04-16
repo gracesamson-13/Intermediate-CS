@@ -8,7 +8,6 @@ import Quiz.Quiz;
 import Game.ErrorCheck;
 import Store.StoreGame;
 
-
 public class GamePortal {
     static Scanner sc = new Scanner(System.in);
     static ArrayList<Game> games = new ArrayList<Game>();
@@ -19,7 +18,7 @@ public class GamePortal {
         while (true) {
             loadGames();
             
-            System.out.println("Select a game to play!");
+            System.out.println("Which game would you like to play?");
             printGameChoices();
             Game g = getGameChoice();
             System.out.println("You're playing " + g.getGameName());
@@ -38,9 +37,9 @@ public class GamePortal {
 
     public static void loadGames() {
         games.clear();
-        games.add(new NumberGuessGameTemplate());
-        games.add(new cards());
-        games.add(new BuzzFeedQuiz());
+        games.add(new NumberGuessGame());
+        games.add(new StoreGame());
+        games.add(new Quiz());
     }
 
     public static void printGameChoices() {

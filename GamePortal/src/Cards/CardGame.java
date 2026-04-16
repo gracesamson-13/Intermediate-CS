@@ -3,7 +3,7 @@ import java.util.Collections;
 
 import processing.core.PApplet;
 
-public class CardGame implements Game {
+public class CardGame {
     // Core game components
     ArrayList<Card> deck = new ArrayList<>();
     Hand playerOneHand;

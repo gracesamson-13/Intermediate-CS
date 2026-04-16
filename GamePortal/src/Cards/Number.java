@@ -1,7 +1,4 @@
-import Game.Game;
-
-public class Number extends CardType implements Game {
-
+public class Number extends CardType {
 
 public Number() { 
     super("NumberType"); 
