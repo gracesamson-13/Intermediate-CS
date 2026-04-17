@@ -1,4 +1,8 @@
-public class Category {
+package BuzzFeedQuiz;
+
+import Game.Game;
+
+public class Category implements Game{
 
     String label;
     String description; // after user is done and gets this category, will output description.

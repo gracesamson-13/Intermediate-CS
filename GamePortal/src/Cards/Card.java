@@ -1,7 +1,9 @@
+package Cards;
 import processing.core.PImage;
+import Game.Game;
 import processing.core.PApplet;
 
-public class Card extends ClickableRectangle {
+public class Card extends ClickableRectangle implements Game {
     String value;
     String suit;
     PImage img;

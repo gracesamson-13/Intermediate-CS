@@ -1,4 +1,7 @@
-public class Answer {
+package BuzzFeedQuiz;
+import Game.Game;
+
+public class Answer implements Game{
     String label;
     Category cat;
     

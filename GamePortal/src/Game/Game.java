@@ -1,5 +1,8 @@
 package Game;
 import java.io.File;
+import java.util.concurrent.CountDownLatch;
+
+import processing.core.PApplet;
 
 public interface Game {
     String getGameName();

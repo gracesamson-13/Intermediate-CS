@@ -1,4 +1,8 @@
-public class Face extends CardType {
+package Cards;
+
+import Game.Game;
+
+public class Face extends CardType implements Game {
 
     public Face() {
         super("FaceCard");

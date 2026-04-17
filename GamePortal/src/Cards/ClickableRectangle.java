@@ -1,6 +1,8 @@
+package Cards;
+import Game.Game;
 import processing.core.PApplet;
 
-public class ClickableRectangle {
+public class ClickableRectangle implements Game {
     int x;
     int y;
     int width;

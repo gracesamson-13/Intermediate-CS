@@ -1,4 +1,8 @@
-public class Number extends CardType {
+package Cards;
+
+import Game.Game;
+
+public class Number extends CardType implements Game {
 
 public Number() { 
     super("NumberType"); 

@@ -1,6 +1,9 @@
+package BuzzFeedQuiz;
 import java.util.Scanner;
 
-public class Question {
+import Game.Game;
+
+public class Question implements Game{
     // Fields
     String label;
     Answer[] possibleAnswers = new Answer[4];

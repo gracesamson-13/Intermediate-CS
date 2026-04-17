@@ -1,6 +1,9 @@
+package Cards;
 import java.util.ArrayList;
 
-public class Hand {
+import Game.Game;
+
+public class Hand implements Game {
     private ArrayList<Card> cards;
     
     public Hand() {

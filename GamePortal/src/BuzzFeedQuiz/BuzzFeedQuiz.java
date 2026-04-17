@@ -1,6 +1,9 @@
+package BuzzFeedQuiz;
 import java.util.Scanner;
 
-public class BuzzFeedQuiz {
+import Game.Game;
+
+public class BuzzFeedQuiz implements Game {
         static Scanner sc = new Scanner(System.in);
 
 // HOW CHRONICALLY ONLINE ARE YOU BUZZFEED QUIZ

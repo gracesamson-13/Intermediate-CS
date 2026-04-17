@@ -1,9 +1,11 @@
+package Cards;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import Game.Game;
 import processing.core.PApplet;
 
-public class CardGame {
+public class CardGame implements Game {
     // Core game components
     ArrayList<Card> deck = new ArrayList<>();
     Hand playerOneHand;

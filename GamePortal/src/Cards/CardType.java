@@ -1,4 +1,8 @@
-public class CardType {
+package Cards;
+
+import Game.Game;
+
+public class CardType implements Game {
     String name;
 
     public CardType(String name) {

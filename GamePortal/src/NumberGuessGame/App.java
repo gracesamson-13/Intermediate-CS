@@ -1,13 +1,16 @@
+package NumberGuessGame;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+
+import Game.Game;
 
 // Task 0: Make the NumberGuessGame work in Game.java
 // Optional: 
 // Task 1: Get getNumGuesses() to work correctly for each Game, and call getBestGame() here in App.java
 // Task 2: Be forgiving to players - tell them they already guessed a number if they have, and do not add it to numGuesses.
 
-public class App {
+public class App implements Game {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the Number Guess Game!");
         // See Game for pseudocode you need to fill out

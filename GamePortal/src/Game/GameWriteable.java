@@ -1,8 +1,4 @@
 package Game;
-/*
- * gets best score from the File based on a csv.
- * CSV is written using "GameName, score" as a heading.
- */
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public interface GameWriteable extends Game {
+public interface GameWriteable implements Game {
 
     // compares the score of this game to current highscore.
     // returns true if this score is "higher" than the current highscore

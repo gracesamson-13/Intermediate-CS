@@ -1,6 +1,8 @@
+package Cards;
+import Game.Game;
 import processing.core.PApplet;
 
-public class App extends PApplet {
+public class App extends PApplet implements Game {
 
     CardGame cardGame = new GinRummy();
     private int timer;
